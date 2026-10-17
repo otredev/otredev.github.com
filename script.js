@@ -11,7 +11,7 @@
 const CONFIG = {
   whatsapp: "16892434927", // solo números, con código de país
   linkedin: "https://www.linkedin.com/in/heberto-urribarri-2223601a8/",
-  github: "https://github.com/0trebeh",
+  github: "https://github.com/otredev",
   defaultLang: "en", // idioma predeterminado: "en" o "es"
 }
 
@@ -51,7 +51,7 @@ const PROJECTS = [
     },
     technologies: ["Next.js", "React", "Vanilla JS", "Vite", "MongoDB", "Tailwind CSS", "PWA", "Render"],
     url: "https://otrelink.onrender.com",
-    repo: "https://github.com/0trebeh/otrelink",
+    repo: "https://github.com/otredev/otrelink",
   },
   {
     id: "atomic-url",
@@ -175,7 +175,7 @@ const PROJECTS = [
     },
     technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
     url: "https://dakeisa.github.io/",
-    repo: "https://github.com/0trebeh/Dakeisa",
+    repo: "https://github.com/otredev/Dakeisa",
   },
   {
     id: "vymg",
@@ -201,7 +201,7 @@ const PROJECTS = [
     },
     technologies: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
     url: "https://vymg.github.io/",
-    repo: "https://github.com/0trebeh/Vymg",
+    repo: "https://github.com/otredev/Vymg",
   },
   {
     id: "dozen",
@@ -227,7 +227,7 @@ const PROJECTS = [
     },
     technologies: ["HTML5", "CSS3", "JavaScript", "i18n", "GitHub Actions"],
     url: "https://0trebeh.github.io/DOZEN/",
-    repo: "https://github.com/0trebeh/DOZEN",
+    repo: "https://github.com/otredev/DOZEN",
   },
   {
     id: "uniquenumber",
@@ -298,7 +298,7 @@ const PROJECTS = [
       es: "Una página de enlaces (Uber Eats, DoorDash, reseñas), una landing con ubicaciones, horarios, galería y FAQ, y un menú digital.",
     },
     technologies: ["HTML5", "CSS3", "JavaScript"],
-    repo: "https://github.com/0trebeh/FoodTruck_Demo",
+    repo: "https://github.com/otredev/FoodTruck_Demo",
   },
   {
     id: "jump",
@@ -322,7 +322,7 @@ const PROJECTS = [
       es: "Rebote automático, paso de un lado a otro de la pantalla, plataformas infinitas (móviles, frágiles y con muelle), dificultad progresiva y récord guardado, con todos los gráficos dibujados por código. El combate es la siguiente fase.",
     },
     technologies: ["Godot 4", "GDScript"],
-    repo: "https://github.com/0trebeh/Jump",
+    repo: "https://github.com/otredev/Jump",
   },
 ]
 
