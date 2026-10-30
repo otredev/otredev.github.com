@@ -1,0 +1,187 @@
+# OtreDev
+
+> OtreDev is a software studio in Orlando, FL that builds websites, web and mobile apps and AI automations for small businesses in the US and Latin America.
+
+OtreDev is run by Heberto Urribarri, a computer engineer based in Orlando, Florida, with 6+ years building web, desktop and automation software for companies in the United States, Colombia and Venezuela. Clients work directly with him from the first call to launch. Work is done in English or Spanish, remotely across the US and Latin America.
+
+## Pages
+
+- [Home (English)](https://otredev.pages.dev/): services, recent work, process, founder, FAQ and contact
+- [Portfolio (English)](https://otredev.pages.dev/portfolio): every project with its challenge, solution and stack
+- [Inicio (Español)](https://otredev.pages.dev/es/)
+- [Portafolio (Español)](https://otredev.pages.dev/es/portfolio)
+
+## Services
+
+- **Websites**: Fast, bilingual sites that turn visitors into calls, bookings and quotes.
+- **Web & mobile apps**: From a first MVP to the platform your team runs on — dashboards, SaaS and mobile apps.
+- **Automation & AI**: Software that pays for itself: ETL pipelines, bots and AI agents that turn hours of manual work into minutes.
+
+## Process
+
+1. **Discovery**: We talk about your business, your goals and what you need to solve.
+2. **Proposal**: You get a clear scope, timeline, price and a phased roadmap.
+3. **AI prototype**: We build a fast visual prototype to validate the idea before building.
+4. **Iteration**: We refine it with your feedback in short cycles until it's what you imagined.
+5. **Launch**: We ship your solution tested, optimized and ready to use.
+6. **Support**: We stay with you after delivery so everything runs smoothly.
+
+## Projects
+
+### Otrelink (SaaS · Full‑stack, in-house project)
+
+Modular, self‑hosted Linktree alternative: a live‑preview editor, 14 block types, 12 themes and built‑in analytics.
+
+- Challenge: Creators and businesses need one page for everything they share, with full control over the design and real insight into what people click — without being locked into a closed platform.
+- Solution: A monorepo with a shared rendering core, so the editor preview is exactly what visitors see. Next.js powers the API and an installable PWA dashboard (drag‑and‑drop blocks, scheduling, undo/redo, multiple pages); the public page is lightweight vanilla JS. Includes 7 wallpaper types, 8 button styles, 21 fonts, 39 social networks, SEO, QR codes, JSON import/export and analytics with clicks, CTR, referrers and devices. Every block, theme or font is a plug‑in module.
+- Stack: Next.js, React, Vanilla JS, Vite, MongoDB, Tailwind CSS, PWA, Render
+- Live: https://otrelink.onrender.com
+- Code: https://github.com/otredev/otrelink
+- Details: https://otredev.pages.dev/portfolio#otrelink
+
+### Atomic URL (Web app · Link shortener, in-house project)
+
+Serverless link shortener: short URLs with zero backend and zero cost.
+
+- Challenge: Share short links without paying for a server or depending on a third‑party service.
+- Solution: Short keys are stored in Firebase Realtime Database; a tiny page hosted on GitHub Pages resolves them and redirects instantly.
+- Stack: JavaScript, Firebase, GitHub Pages
+- Live: https://atomic-url.github.io/x/
+- Code: https://github.com/atomic-url/x
+- Details: https://otredev.pages.dev/portfolio#atomic-url
+
+### Blackboard (Wallpaper Engine · Steam, in-house project)
+
+Interactive blackboard wallpaper for Wallpaper Engine, published on Steam.
+
+- Challenge: Turn the desktop into a useful, living space instead of a static image.
+- Solution: A web‑based wallpaper to write, draw in color and add images right on the desktop, with tools to select and delete elements. Published on the Steam Workshop.
+- Stack: HTML5 Canvas, JavaScript, Wallpaper Engine
+- Live: https://steamcommunity.com/sharedfiles/filedetails/?id=3552720352
+- Details: https://otredev.pages.dev/portfolio#blackboard
+
+### Rose Multi Services Group (WordPress · Cleaning services, client project)
+
+Bilingual WordPress site for a residential and commercial cleaning company in Orlando, FL.
+
+- Challenge: A growing Orlando cleaning company needed a professional online presence to reach both English‑ and Spanish‑speaking customers, show its full range of services and turn visitors into quote requests.
+- Solution: A bilingual (EN/ES) WordPress site built with Elementor and a customized child theme: hero slider, a page for each service (residential, commercial, windows, carpets, move‑in/move‑out, after renovation…), a 3‑step “how it works” flow, a filterable project gallery and quote forms with Contact Form 7. Deployed and hosted on Hostinger with the client's own domain.
+- Stack: WordPress, Elementor, Child theme, Contact Form 7, Hostinger
+- Live: https://rosemultiservicesgroup.com/
+- Details: https://otredev.pages.dev/portfolio#rose
+
+### Forex Chart (Web app · Trading, in-house project)
+
+Real‑time forex charting platform with indicators and automatic pattern detection.
+
+- Challenge: I wanted a trading chart built around my own analysis: live prices, my favorite indicators, and chart patterns spotted automatically instead of by eye.
+- Solution: A charting app with a live Socket.IO price feed, multiple timeframes, indicators (SMA, EMA, MACD, RSI, VWAP, volume), drawing tools, a news calendar and detection of candlestick and chart patterns such as head & shoulders, double tops and triangles.
+- Stack: React 19, TypeScript, Vite, Lightweight Charts, Socket.IO
+- Details: https://otredev.pages.dev/portfolio#forex-chart
+
+### Dakeisa (Landing page · Music, client project)
+
+Landing page for a professional live‑music singer.
+
+- Challenge: Dakeisa needed a place to showcase her music and get booked for weddings, corporate events, restaurants and private celebrations.
+- Solution: An elegant landing page with demos by event type, services, a photo gallery and direct booking through WhatsApp.
+- Stack: HTML5, CSS3, JavaScript, GitHub Pages
+- Live: https://dakeisa.github.io/
+- Code: https://github.com/otredev/Dakeisa
+- Details: https://otredev.pages.dev/portfolio#dakeisa
+
+### VYMG (Website · Events, client project)
+
+Website for a kids' party and event rentals business.
+
+- Challenge: A family business renting inflatables, trampolines, a 360° photo booth, LED robots and more across Zulia needed to show its catalog and receive bookings online.
+- Solution: A vibrant landing page with a video hero, service catalog, gallery, testimonials and one‑tap booking through WhatsApp.
+- Stack: HTML5, CSS3, JavaScript, GitHub Pages
+- Live: https://vymg.github.io/
+- Code: https://github.com/otredev/Vymg
+- Details: https://otredev.pages.dev/portfolio#vymg
+
+### D Ozen (Website · Finance, client project)
+
+Bilingual website for a credit‑repair and financial intelligence firm.
+
+- Challenge: D Ozen combines AI‑assisted analysis, legal strategy and direct access to capital, and needed a site that builds trust and turns visitors into consultations.
+- Solution: A premium bilingual (EN/ES) site with animated credit‑score gauges, the founders' story, results, services, process and dedicated consultation pages for each advisor.
+- Stack: HTML5, CSS3, JavaScript, i18n, GitHub Actions
+- Live: https://0trebeh.github.io/DOZEN/
+- Code: https://github.com/otredev/DOZEN
+- Details: https://otredev.pages.dev/portfolio#dozen
+
+### UniqueNumber (Web app · Publishing, in-house project)
+
+Puzzle Book Studio: a web editor to create, lay out and export sudoku books ready for Amazon KDP.
+
+- Challenge: Publishing a puzzle book means generating hundreds of valid puzzles, grading their difficulty, designing every page and meeting Amazon KDP's strict print specs — work usually spread across several tools.
+- Solution: An all‑in‑one studio: a visual page editor, bulk generation of 4×4, 9×9 and 16×16 sudokus in a Web Worker with real difficulty grading (X‑Wing, Swordfish…), automatic solution pages, covers with ISBN barcode, a mascot and story system, a KDP preflight with auto‑fixes, and export to print‑ready PDF and EPUB 3.
+- Stack: React 19, TypeScript, Konva, pdf-lib, Zustand, IndexedDB, Web Workers, Playwright
+- Details: https://otredev.pages.dev/portfolio#uniquenumber
+
+### Aguita Viva (Website · Demo, client project)
+
+Demo website for a local water business.
+
+- Challenge: A local business needed an online presence to show its products and make ordering easy.
+- Solution: A clean, mobile‑first demo site with products, service areas and direct contact through WhatsApp.
+- Stack: HTML5, CSS3, JavaScript
+- Details: https://otredev.pages.dev/portfolio#aguitaviva
+
+### Food Truck (Website · Demo, client project)
+
+Demo site for a Venezuelan food truck: links, landing page and digital menu.
+
+- Challenge: Food trucks move around: customers need to know where they are, when they're open and what's on the menu.
+- Solution: A link‑in‑bio page (Uber Eats, DoorDash, reviews), a landing page with locations, hours, gallery and FAQ, and a digital menu.
+- Stack: HTML5, CSS3, JavaScript
+- Code: https://github.com/otredev/FoodTruck_Demo
+- Details: https://otredev.pages.dev/portfolio#foodtruck
+
+### Jump (Video game · Godot, in-house project)
+
+Infinite vertical platformer made with Godot 4, inspired by Doodle Jump.
+
+- Challenge: Build a Doodle Jump‑style game from scratch and extend it with combat mechanics.
+- Solution: Auto‑bounce, screen wrap, infinite procedural platforms (moving, fragile and spring), progressive difficulty and a saved high score — with all graphics drawn in code. Combat is the next phase.
+- Stack: Godot 4, GDScript
+- Code: https://github.com/otredev/Jump
+- Details: https://otredev.pages.dev/portfolio#jump
+
+## FAQ
+
+### How long does a project take?
+
+It depends on the scope. A landing page takes a few days; a custom app or automation usually takes 3 to 8 weeks. As a reference, I've taken a B2B platform from zero to production in one month. Your proposal includes a concrete, phased timeline.
+
+### How much does it cost?
+
+Every project is quoted based on what you need. After our first conversation you get a fixed‑price proposal with no hidden costs. We can start with a first version and grow in phases.
+
+### What does it mean that you use AI to build?
+
+We use AI tools to prototype, generate repetitive code and test faster. All code is reviewed and validated by a developer, so you gain speed without losing quality.
+
+### Do I own the code and the project?
+
+Yes. At the end you receive the source code, the accounts and the documentation you need. Your project is 100% yours.
+
+### Can you automate a process we do by hand?
+
+That's my specialty. If your team copies data between systems, builds reports in spreadsheets or repeats the same steps every day, there's probably an ETL pipeline, a bot or an AI agent that can do it. I've cut that kind of work by up to 85%.
+
+### Do you offer support after delivery?
+
+Yes. Every project includes an initial support period and, if you need it, a maintenance plan with continuous improvements.
+
+### Do you work in English and Spanish?
+
+Yes. I'm based in Orlando, FL and work remotely with clients across the US and Latin America, in English or Spanish.
+
+## Contact
+
+- WhatsApp: https://wa.me/16892434927 (+1 689 243 4927)
+- LinkedIn: https://www.linkedin.com/in/heberto-urribarri-2223601a8/
+- GitHub: https://github.com/otredev

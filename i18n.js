@@ -4,9 +4,11 @@
    ========================================================= */
 const I18N = {
   en: {
-    "meta.title": "OtreDev — Agile software development with AI",
-    "meta.desc": "OtreDev is a software studio in Orlando, FL. Websites, apps and automations — ETL, bots and AI agents — for small businesses and growing companies in the US and Latin America.",
-    "meta.pfTitle": "Portfolio — OtreDev",
+    "meta.title": "OtreDev | Web Development, Apps & AI Automation in Orlando, FL",
+    "meta.desc": "OtreDev is a software studio in Orlando, FL that builds websites, web and mobile apps and AI automations for small businesses in the US and Latin America.",
+    "meta.pfTitle": "Portfolio | Websites, Apps and Automation Projects | OtreDev",
+    "meta.pfDesc": "Websites, web apps, tools and games built by OtreDev for clients in Orlando, FL and Latin America, with the challenge, solution and tech stack of each project.",
+    "founder.alt": "Heberto Urribarri, founder of OtreDev",
 
     "nav.services": "Services",
     "nav.process": "Process",
@@ -236,9 +238,11 @@ const I18N = {
   },
 
   es: {
-    "meta.title": "OtreDev — Desarrollo de software ágil con IA",
-    "meta.desc": "OtreDev es un estudio de software en Orlando, FL. Sitios web, apps y automatizaciones (ETL, bots y agentes de IA) para pymes y empresas en crecimiento en EE. UU. y Latinoamérica.",
-    "meta.pfTitle": "Portafolio — OtreDev",
+    "meta.title": "OtreDev | Desarrollo web, apps y automatización con IA en Orlando, FL",
+    "meta.desc": "OtreDev es un estudio de software en Orlando, FL que crea sitios web, apps web y móviles y automatizaciones con IA para pymes en EE. UU. y Latinoamérica.",
+    "meta.pfTitle": "Portafolio | Sitios web, apps y automatizaciones | OtreDev",
+    "meta.pfDesc": "Sitios web, apps, herramientas y juegos creados por OtreDev para clientes en Orlando, FL y Latinoamérica, con el reto, la solución y la tecnología de cada proyecto.",
+    "founder.alt": "Heberto Urribarri, fundador de OtreDev",
 
     "nav.services": "Servicios",
     "nav.process": "Proceso",

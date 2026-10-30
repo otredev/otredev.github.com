@@ -332,12 +332,41 @@ const PROJECTS = [
 const LANG_KEY = "otredev-lang"
 let lang = CONFIG.defaultLang
 
+/* Cada idioma tiene su propia página (/ en inglés, /es/ en español).
+   <html lang> dice el idioma de la página y data-alt-en / data-alt-es
+   apuntan a la versión en el otro idioma. data-base es la ruta a la raíz. */
+const ROOT_EL = typeof document !== "undefined" ? document.documentElement : { lang: "", dataset: {} }
+const PAGE_LANG = ROOT_EL.lang || CONFIG.defaultLang
+let ASSET_BASE = ROOT_EL.dataset.base || ""
+
+function altHref(l) {
+  return ROOT_EL.dataset["alt" + l.charAt(0).toUpperCase() + l.slice(1)]
+}
+
+function asset(src) {
+  return /^(https?:)?\/\//.test(src) ? src : ASSET_BASE + src
+}
+
 function loadLang() {
+  let saved = null
   try {
-    const saved = localStorage.getItem(LANG_KEY)
-    if (saved && I18N[saved]) return saved
+    saved = localStorage.getItem(LANG_KEY)
   } catch (e) {}
-  return CONFIG.defaultLang
+  // Si el visitante eligió otro idioma antes, lo llevamos a esa versión
+  if (saved && saved !== PAGE_LANG && I18N[saved] && altHref(saved)) {
+    location.replace(altHref(saved) + location.hash)
+  }
+  return I18N[PAGE_LANG] ? PAGE_LANG : CONFIG.defaultLang
+}
+
+function switchLang(next) {
+  const alt = altHref(next)
+  if (alt && next !== lang) {
+    try {
+      localStorage.setItem(LANG_KEY, next)
+    } catch (e) {}
+    location.href = alt + location.hash
+  } else applyLang(next)
 }
 
 function t(key) {
@@ -350,9 +379,6 @@ function tx(obj) {
 
 function applyLang(next) {
   lang = I18N[next] ? next : "en"
-  try {
-    localStorage.setItem(LANG_KEY, lang)
-  } catch (e) {}
   document.documentElement.lang = lang
 
   $$("[data-i18n]").forEach((el) => (el.textContent = t(el.dataset.i18n)))
@@ -360,6 +386,7 @@ function applyLang(next) {
   $$("[data-i18n-placeholder]").forEach((el) => (el.placeholder = t(el.dataset.i18nPlaceholder)))
   $$("[data-i18n-content]").forEach((el) => (el.content = t(el.dataset.i18nContent)))
   $$("[data-i18n-aria]").forEach((el) => el.setAttribute("aria-label", t(el.dataset.i18nAria)))
+  $$("[data-i18n-alt]").forEach((el) => (el.alt = t(el.dataset.i18nAlt)))
 
   $$(".lang__btn").forEach((b) => {
     const on = b.dataset.lang === lang
@@ -413,7 +440,7 @@ function mockup(p) {
 
 function thumb(p) {
   const img = p.image
-    ? `<img src="${p.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
+    ? `<img src="${asset(p.image)}" alt="${p.title} · ${tx(p.type)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
     : ""
   return `${mockup(p)}${img}`
 }
@@ -1245,7 +1272,7 @@ function setupNav() {
     }),
   )
 
-  $$(".lang__btn").forEach((b) => b.addEventListener("click", () => applyLang(b.dataset.lang)))
+  $$(".lang__btn").forEach((b) => b.addEventListener("click", () => switchLang(b.dataset.lang)))
 
   // Menú desplegable de servicios: hover en escritorio, clic en todos
   const dd = $("#servicesMenu")

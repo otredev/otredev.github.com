@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://otredev.pages.dev/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://otredev.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://otredev.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://otredev.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://otredev.pages.dev/es/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://otredev.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://otredev.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://otredev.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://otredev.pages.dev/portfolio</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://otredev.pages.dev/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://otredev.pages.dev/es/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://otredev.pages.dev/portfolio"/>
+  </url>
+  <url>
+    <loc>https://otredev.pages.dev/es/portfolio</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://otredev.pages.dev/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://otredev.pages.dev/es/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://otredev.pages.dev/portfolio"/>
+  </url>
+</urlset>
