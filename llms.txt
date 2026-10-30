@@ -28,6 +28,16 @@ OtreDev is run by Heberto Urribarri, a computer engineer based in Orlando, Flori
 
 ## Projects
 
+### Leads Scraping (Web app · CRM, in-house project)
+
+Self‑hosted CRM that finds businesses on Google Maps, turns them into clients and gives each one a private portal with their project's progress.
+
+- Challenge: Finding clients, following up and keeping them informed usually means juggling a scraper, a spreadsheet, WhatsApp, an invoicing tool and endless status emails.
+- Solution: A modular Next.js app that covers the whole cycle: Google Maps searches with live progress (open‑source gosom scraper), a CRM with table, Kanban and map views, WhatsApp and email templates, follow‑ups with push reminders, contact enrichment from each business's website, projects with budget, payments and hours, proposals, contracts and invoices from templates, and profitability by channel, sector or city. Each client gets a private portal on Cloudflare Workers + D1 to accept terms, follow progress and send messages. Multi‑account with isolated data, an installable PWA and an MCP server to run the CRM by talking to Claude.
+- Stack: Next.js 16, TypeScript, Tailwind CSS, MongoDB, Cloudflare Workers, D1, Docker, MCP, PWA
+- Code: https://github.com/otredev/Leads-Scraping
+- Details: https://otredev.pages.dev/portfolio#leads-scraping
+
 ### Otrelink (SaaS · Full‑stack, in-house project)
 
 Modular, self‑hosted Linktree alternative: a live‑preview editor, 14 block types, 12 themes and built‑in analytics.

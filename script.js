@@ -21,12 +21,36 @@ const CONFIG = {
    category:  "client" | "app" | "other"   (filtros del portafolio)
    image:     captura en img/projects/ o URL (opcional)
    layout:    miniatura dibujada con CSS si no hay imagen:
-              "chart" | "site" | "sudoku" | "number" | "shortener" | "board" | "game" | "links"
+              "chart" | "site" | "sudoku" | "number" | "shortener" | "board" | "game" | "links" | "crm"
    featured:  true → aparece en la página de inicio
    url / repo: enlace en vivo / código (opcionales)
    Los textos van en { en: "...", es: "..." }
    --------------------------------------------------------- */
 const PROJECTS = [
+  {
+    id: "leads-scraping",
+    title: "Leads Scraping",
+    kind: "personal",
+    category: "app",
+    layout: "crm",
+    colors: ["#34d399", "#8b7bff"],
+    featured: true,
+    type: { en: "Web app · CRM", es: "App web · CRM" },
+    summary: {
+      en: "Self‑hosted CRM that finds businesses on Google Maps, turns them into clients and gives each one a private portal with their project's progress.",
+      es: "CRM autoalojado que encuentra negocios en Google Maps, los convierte en clientes y le da a cada uno un portal privado con el avance de su proyecto.",
+    },
+    challenge: {
+      en: "Finding clients, following up and keeping them informed usually means juggling a scraper, a spreadsheet, WhatsApp, an invoicing tool and endless status emails.",
+      es: "Conseguir clientes, darles seguimiento y mantenerlos informados suele obligar a usar a la vez un scraper, una hoja de cálculo, WhatsApp, una herramienta de facturación y un sinfín de correos de avance.",
+    },
+    solution: {
+      en: "A modular Next.js app that covers the whole cycle: Google Maps searches with live progress (open‑source gosom scraper), a CRM with table, Kanban and map views, WhatsApp and email templates, follow‑ups with push reminders, contact enrichment from each business's website, projects with budget, payments and hours, proposals, contracts and invoices from templates, and profitability by channel, sector or city. Each client gets a private portal on Cloudflare Workers + D1 to accept terms, follow progress and send messages. Multi‑account with isolated data, an installable PWA and an MCP server to run the CRM by talking to Claude.",
+      es: "Una app modular en Next.js que cubre todo el ciclo: búsquedas en Google Maps con progreso en vivo (scraper open source gosom), CRM con vista de tabla, tablero Kanban y mapa, plantillas de WhatsApp y email, seguimientos con avisos push, enriquecimiento de contactos desde la web de cada negocio, proyectos con presupuesto, pagos y horas, propuestas, contratos y facturas desde plantillas, y rentabilidad por canal, sector o ciudad. Cada cliente tiene un portal privado en Cloudflare Workers + D1 para aceptar condiciones, ver el avance y enviar mensajes. Multicuenta con datos aislados, PWA instalable y servidor MCP para manejar el CRM hablando con Claude.",
+    },
+    technologies: ["Next.js 16", "TypeScript", "Tailwind CSS", "MongoDB", "Cloudflare Workers", "D1", "Docker", "MCP", "PWA"],
+    repo: "https://github.com/otredev/Leads-Scraping",
+  },
   {
     id: "otrelink",
     title: "Otrelink",
@@ -433,6 +457,7 @@ function mockup(p) {
     shortener: `${bar}<div class="mock__short"><div class="m-input"><em></em><span class="m-btn"></span></div><div class="m-result"><span>atomic-url.github.io/x/?search=</span><b>otre</b></div></div>`,
     board: `<div class="mock__board"><svg viewBox="0 0 200 110" aria-hidden="true"><path d="M20 30c20-14 40 14 60 0s40-14 60 0" /><path d="M24 70h60M24 82h40" /><circle cx="150" cy="72" r="18"/><path d="M120 40l12 12 22-24"/></svg><div class="m-tools"><i></i><i></i><i></i><i></i></div></div>`,
     game: `<div class="mock__game"><i class="p" style="--x:18%;--y:82%"></i><i class="p mv" style="--x:55%;--y:64%"></i><i class="p" style="--x:30%;--y:46%"></i><i class="p br" style="--x:62%;--y:28%"></i><i class="p" style="--x:22%;--y:12%"></i><span class="hero-dot"></span><b>1280</b></div>`,
+    crm: `${bar}<div class="mock__dash mock__crm"><i class="m-side"></i><div class="m-main"><div class="m-kanban">${[[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 2]].map((col) => `<div><span class="m-col"></span>${col.map((c) => `<i class="m-card${c === 1 ? " hot" : c === 2 ? " won" : ""}"></i>`).join("")}</div>`).join("")}</div></div></div>`,
     links: `<div class="mock__links"><div class="m-phone"><i class="m-avatar"></i><b></b><span></span><span></span><span></span><span></span></div></div>`,
   }
   return `<div class="mock" style="${style}" aria-hidden="true">${layouts[p.layout] || layouts.site}</div>`
