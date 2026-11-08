@@ -38,6 +38,16 @@ Self‑hosted CRM that finds businesses on Google Maps, turns them into clients 
 - Code: https://github.com/otredev/Leads-Scraping
 - Details: https://otredev.pages.dev/portfolio#leads-scraping
 
+### ChatNote (PWA · Notes & tasks, in-house project)
+
+Notes and to‑do app shaped like a chat, inspired by WhatsApp, with shared chats, push reminders and AI that transcribes voice notes and reads photos.
+
+- Challenge: Notes, to‑dos and reminders end up scattered across messaging apps, notebooks and tools nobody opens, and sharing a list with family or a team means learning yet another app.
+- Solution: An offline‑first PWA where every page is a chat: free messages, notes or task lists with due dates, recurring tasks, checklists and polls. It runs on Cloudflare Workers with MongoDB Atlas and R2 for attachments, syncs in real time over WebSockets (Durable Objects) and sends push reminders and a daily summary. Accounts with invitations, shared chats with admins and @mentions; Workers AI transcribes voice notes (Whisper) and extracts text from photos (Llama 3.2 Vision). It also turns emails into notes, makes daily backups, keeps cloud storage inside the free tier, ships as an Android app (TWA) and includes an MCP server so Claude can read and organize notes.
+- Stack: JavaScript, PWA, Cloudflare Workers, Durable Objects, MongoDB Atlas, R2, Workers AI, Web Push, MCP
+- Code: https://github.com/otredev/notes
+- Details: https://otredev.pages.dev/portfolio#chatnote
+
 ### Otrelink (SaaS · Full‑stack, in-house project)
 
 Modular, self‑hosted Linktree alternative: a live‑preview editor, 14 block types, 12 themes and built‑in analytics.

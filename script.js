@@ -21,7 +21,7 @@ const CONFIG = {
    category:  "client" | "app" | "other"   (filtros del portafolio)
    image:     captura en img/projects/ o URL (opcional)
    layout:    miniatura dibujada con CSS si no hay imagen:
-              "chart" | "site" | "sudoku" | "number" | "shortener" | "board" | "game" | "links" | "crm"
+              "chart" | "site" | "sudoku" | "number" | "shortener" | "board" | "game" | "links" | "crm" | "chat"
    featured:  true → aparece en la página de inicio
    url / repo: enlace en vivo / código (opcionales)
    Los textos van en { en: "...", es: "..." }
@@ -50,6 +50,30 @@ const PROJECTS = [
     },
     technologies: ["Next.js 16", "TypeScript", "Tailwind CSS", "MongoDB", "Cloudflare Workers", "D1", "Docker", "MCP", "PWA"],
     repo: "https://github.com/otredev/Leads-Scraping",
+  },
+  {
+    id: "chatnote",
+    title: "ChatNote",
+    kind: "personal",
+    category: "app",
+    layout: "chat",
+    colors: ["#25d366", "#8b7bff"],
+    featured: true,
+    type: { en: "PWA · Notes & tasks", es: "PWA · Notas y tareas" },
+    summary: {
+      en: "Notes and to‑do app shaped like a chat, inspired by WhatsApp, with shared chats, push reminders and AI that transcribes voice notes and reads photos.",
+      es: "App de notas y tareas con forma de chat, inspirada en WhatsApp, con chats compartidos, recordatorios push e IA que transcribe notas de voz y lee fotos.",
+    },
+    challenge: {
+      en: "Notes, to‑dos and reminders end up scattered across messaging apps, notebooks and tools nobody opens, and sharing a list with family or a team means learning yet another app.",
+      es: "Las notas, tareas y recordatorios acaban repartidos entre apps de mensajería, libretas y herramientas que nadie abre, y compartir una lista con la familia o un equipo obliga a aprender otra app más.",
+    },
+    solution: {
+      en: "An offline‑first PWA where every page is a chat: free messages, notes or task lists with due dates, recurring tasks, checklists and polls. It runs on Cloudflare Workers with MongoDB Atlas and R2 for attachments, syncs in real time over WebSockets (Durable Objects) and sends push reminders and a daily summary. Accounts with invitations, shared chats with admins and @mentions; Workers AI transcribes voice notes (Whisper) and extracts text from photos (Llama 3.2 Vision). It also turns emails into notes, makes daily backups, keeps cloud storage inside the free tier, ships as an Android app (TWA) and includes an MCP server so Claude can read and organize notes.",
+      es: "Una PWA que funciona sin conexión donde cada página es un chat: mensajes libres, notas o listas de tareas con fecha límite, tareas recurrentes, casillas y encuestas. Corre en Cloudflare Workers con MongoDB Atlas y R2 para los adjuntos, sincroniza en tiempo real por WebSocket (Durable Objects) y envía recordatorios push y un resumen diario. Cuentas con invitación, chats compartidos con administradores y @menciones; Workers AI transcribe notas de voz (Whisper) y extrae texto de fotos (Llama 3.2 Vision). También convierte correos en notas, hace copias de seguridad diarias, mantiene el almacenamiento dentro del plan gratis, se instala como app de Android (TWA) e incluye un servidor MCP para que Claude lea y organice las notas.",
+    },
+    technologies: ["JavaScript", "PWA", "Cloudflare Workers", "Durable Objects", "MongoDB Atlas", "R2", "Workers AI", "Web Push", "MCP"],
+    repo: "https://github.com/otredev/notes",
   },
   {
     id: "otrelink",
@@ -458,6 +482,7 @@ function mockup(p) {
     board: `<div class="mock__board"><svg viewBox="0 0 200 110" aria-hidden="true"><path d="M20 30c20-14 40 14 60 0s40-14 60 0" /><path d="M24 70h60M24 82h40" /><circle cx="150" cy="72" r="18"/><path d="M120 40l12 12 22-24"/></svg><div class="m-tools"><i></i><i></i><i></i><i></i></div></div>`,
     game: `<div class="mock__game"><i class="p" style="--x:18%;--y:82%"></i><i class="p mv" style="--x:55%;--y:64%"></i><i class="p" style="--x:30%;--y:46%"></i><i class="p br" style="--x:62%;--y:28%"></i><i class="p" style="--x:22%;--y:12%"></i><span class="hero-dot"></span><b>1280</b></div>`,
     crm: `${bar}<div class="mock__dash mock__crm"><i class="m-side"></i><div class="m-main"><div class="m-kanban">${[[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 2]].map((col) => `<div><span class="m-col"></span>${col.map((c) => `<i class="m-card${c === 1 ? " hot" : c === 2 ? " won" : ""}"></i>`).join("")}</div>`).join("")}</div></div></div>`,
+    chat: `<div class="mock__chat"><div class="m-win"><span class="m-head"></span><i class="m-msg"></i><i class="m-msg out"></i><i class="m-msg task"></i><i class="m-msg task done"></i><i class="m-msg out short"></i><span class="m-type"></span></div></div>`,
     links: `<div class="mock__links"><div class="m-phone"><i class="m-avatar"></i><b></b><span></span><span></span><span></span><span></span></div></div>`,
   }
   return `<div class="mock" style="${style}" aria-hidden="true">${layouts[p.layout] || layouts.site}</div>`
