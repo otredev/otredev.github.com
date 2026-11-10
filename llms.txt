@@ -38,6 +38,16 @@ Self‑hosted CRM that finds businesses on Google Maps, turns them into clients 
 - Code: https://github.com/otredev/Leads-Scraping
 - Details: https://otredev.pages.dev/portfolio#leads-scraping
 
+### Nexo Commerce (SaaS · POS & online store, in-house project)
+
+Point of sale, inventory and online store for small and medium businesses in one panel, running entirely on Cloudflare.
+
+- Challenge: Small shops sell at the counter and online with separate systems, so stock drifts apart, the last unit gets sold twice and reports never add up. Most tools that solve it are expensive, in English or need servers to maintain.
+- Solution: A multi‑tenant SaaS in Spanish where catalog and stock are one: products with variants, stock per location, Kardex, blind counts and transfers; a keyboard‑and‑scanner POS with mixed payments, cash closing, returns and a customer display; purchase orders and reorder suggestions; and an online store with real stock, Stripe payments, order tracking, themes, custom domains, SEO, sitemaps and llms.txt. It adds custom roles, audit log, push notifications, cookie‑free store analytics, subscription plans with Stripe, a separate admin panel for the platform team, a REST API, signed webhooks and an MCP server so Claude can run the business. One shared pricing engine runs in the POS, the store and the server, and every change is written atomically with its audit, covered by 154 unit tests and 935 end‑to‑end checks.
+- Stack: TypeScript, React 19, Vite, Hono, Drizzle ORM, Cloudflare Workers, D1, R2, Durable Objects, Stripe, MCP, Vitest, Playwright
+- Code: https://github.com/otredev/nexo-commerce
+- Details: https://otredev.pages.dev/portfolio#nexo
+
 ### ChatNote (PWA · Notes & tasks, in-house project)
 
 Notes and to‑do app shaped like a chat, inspired by WhatsApp, with shared chats, push reminders and AI that transcribes voice notes and reads photos.

@@ -52,6 +52,31 @@ const PROJECTS = [
     repo: "https://github.com/otredev/Leads-Scraping",
   },
   {
+    id: "nexo",
+    title: "Nexo Commerce",
+    kind: "personal",
+    category: "app",
+    image: "img/projects/nexo.jpg",
+    layout: "crm",
+    colors: ["#3f8a63", "#8b7bff"],
+    featured: true,
+    type: { en: "SaaS · POS & online store", es: "SaaS · Punto de venta y tienda en línea" },
+    summary: {
+      en: "Point of sale, inventory and online store for small and medium businesses in one panel, running entirely on Cloudflare.",
+      es: "Punto de venta, inventario y tienda en línea para pequeños y medianos negocios en un solo panel, corriendo completo en Cloudflare.",
+    },
+    challenge: {
+      en: "Small shops sell at the counter and online with separate systems, so stock drifts apart, the last unit gets sold twice and reports never add up. Most tools that solve it are expensive, in English or need servers to maintain.",
+      es: "Las tiendas pequeñas venden en mostrador y en internet con sistemas separados, así que las existencias no cuadran, la última pieza se vende dos veces y los reportes nunca coinciden. Casi todas las herramientas que lo resuelven son caras, están en inglés o necesitan servidores que mantener.",
+    },
+    solution: {
+      en: "A multi‑tenant SaaS in Spanish where catalog and stock are one: products with variants, stock per location, Kardex, blind counts and transfers; a keyboard‑and‑scanner POS with mixed payments, cash closing, returns and a customer display; purchase orders and reorder suggestions; and an online store with real stock, Stripe payments, order tracking, themes, custom domains, SEO, sitemaps and llms.txt. It adds custom roles, audit log, push notifications, cookie‑free store analytics, subscription plans with Stripe, a separate admin panel for the platform team, a REST API, signed webhooks and an MCP server so Claude can run the business. One shared pricing engine runs in the POS, the store and the server, and every change is written atomically with its audit, covered by 154 unit tests and 935 end‑to‑end checks.",
+      es: "Un SaaS multiempresa en español donde el catálogo y las existencias son uno solo: productos con variantes, existencias por ubicación, Kardex, conteos a ciegas y traspasos; caja para teclado y escáner con pagos mixtos, cierre de caja, devoluciones y pantalla para el cliente; órdenes de compra y sugerencias de reorden; y tienda en línea con existencias reales, pagos con Stripe, seguimiento de pedidos, temas, dominios propios, SEO, sitemaps y llms.txt. Suma roles personalizados, auditoría, notificaciones push, estadísticas de la tienda sin cookies, planes con suscripción en Stripe, un panel de administración aparte para el equipo de la plataforma, API REST, webhooks firmados y servidor MCP para que Claude opere el negocio. Un solo motor de precios corre en la caja, la tienda y el servidor, y cada cambio se guarda de forma atómica junto con su auditoría, con 154 pruebas unitarias y 935 comprobaciones de punta a punta.",
+    },
+    technologies: ["TypeScript", "React 19", "Vite", "Hono", "Drizzle ORM", "Cloudflare Workers", "D1", "R2", "Durable Objects", "Stripe", "MCP", "Vitest", "Playwright"],
+    repo: "https://github.com/otredev/nexo-commerce",
+  },
+  {
     id: "chatnote",
     title: "ChatNote",
     kind: "personal",
